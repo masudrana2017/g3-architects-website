@@ -76,12 +76,49 @@ ul>li>a{
     align-items: center;
     margin-bottom: 20px;
 }
+/* main section */
+main{
+    padding: 40px 240px;;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+
+}
+.team img{
+    width: 100%;
+}
+.team-title{
+    width: 468px;
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 500;
+}
+.team-discription{
+    width: 537px;
+    color:#727272;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
 /* Media Query */
 @media screen and (max-width:576px) {
     header{
         padding: 20px;
     }
-    nav{
+    nav, .feature{
         flex-direction: column;
+    }
+    .team{
+        grid-template-columns: 1fr;
     }
 }
